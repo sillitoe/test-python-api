@@ -9,15 +9,20 @@ Investigate Python-based frameworks that can do the following:
 
 ### Django REST Framework
 
-Looks like a mature, well used framework. OpenAPI compatibility doesn't yet look completely settled (3rd party plugins)
+First impressions?
+
+Mature, well used framework. OpenAPI compatibility isn't available via core, but seems to be available via 3rd party plugins.
 
 Links:
 
 * [quickstart](http://www.django-rest-framework.org/tutorial/quickstart/)
-* [openapi](http://www.django-rest-framework.org/topics/documenting-your-api/)
+* [api docs](http://www.django-rest-framework.org/topics/documenting-your-api/) - available plugins
+* [drf_yasg](https://drf-yasg.readthedocs.io/en/stable/) - produced v2.0 docs with zero hassle
 
 ### APIStar
 
-Newer project - apparently lots of overlap with DRF. Looks good - generates nice API docs - very little internal docs though. Probably too early to use.
+First impressions?
+
+Pretty new and shiny. Apparently lots of overlap with DRF. Seems like it has lots of nice features, but code is still mobile and internal docs are scarce. The synopsis for generating API docs is very simple but it works and is nice. Probably too early to use.
 
 * [quickstart](https://docs.apistar.com/)
