@@ -1,10 +1,10 @@
 
 from django.test import TestCase
+from django.urls import reverse
 from .models import Bucketlist
 
 from rest_framework.test import APIClient
 from rest_framework import status
-from django.core.urlresolvers import reverse
 
 # Create your tests here.
 
@@ -52,6 +52,7 @@ class ViewTestCase(TestCase):
 
     def test_api_can_update_bucketlist(self):
         """Test the api can update a given bucketlist."""
+        bucketlist = Bucketlist.objects.get()
         change_bucketlist = {'name': 'Something new'}
         res = self.client.put(
             reverse('details', kwargs={'pk': bucketlist.id}),
