@@ -1,21 +1,15 @@
 # Python API Frameworks
 
-## Aim
+Aim - from the perspective of a novice Python user (but competent web/API programmer) - investigate Python-based frameworks that can do the following:
 
-Investigate Python-based frameworks that can do the following:
-
-* generate a "Hello, World" API
+* generate a "Hello, World" API (or equivalent)
 * produce a valid OpenAPI specification
-
-## Frameworks
 
 ### Django REST Framework
 
 **First impressions?**
 
 Mature, well used. OpenAPI compatibility isn't available via core, but seems to be available via 3rd party plugins.
-
-Links:
 
 * [quickstart](http://www.django-rest-framework.org/tutorial/quickstart/)
 * [api docs](http://www.django-rest-framework.org/topics/documenting-your-api/) - available plugins
