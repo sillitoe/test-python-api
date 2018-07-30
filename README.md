@@ -12,8 +12,10 @@ Aim - from the perspective of a novice Python user (but competent web/API progra
 Mature, well used. OpenAPI compatibility isn't available via core, but seems to be available via 3rd party plugins.
 
 * [quickstart](http://www.django-rest-framework.org/tutorial/quickstart/)
-* [api docs](http://www.django-rest-framework.org/topics/documenting-your-api/) - available plugins
-* [drf_yasg](https://drf-yasg.readthedocs.io/en/stable/) - produced v2.0 docs with zero hassle
+* [api docs](http://www.django-rest-framework.org/topics/documenting-your-api/) (available plugins for auto doc generation)
+* [drf_yasg](https://drf-yasg.readthedocs.io/en/stable/) (produced v2.0 docs with zero hassle)
+
+[Test Django App](./django)
 
 ### APIStar
 
