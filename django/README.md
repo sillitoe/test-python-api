@@ -14,6 +14,12 @@ pip install -r requirements.txt
 cd ./djangorest
 ```
 
+### Apply database migrations
+
+```
+./manage.py migrate
+```
+
 ### Run tests
 
 ```
