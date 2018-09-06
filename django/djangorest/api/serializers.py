@@ -1,13 +1,23 @@
 # api/serializers.py
 
-from .models import Bucketlist
+from .models import SelectTemplateTask
 from rest_framework import serializers
 
-class BucketlistSerializer(serializers.ModelSerializer):
+class SelectTemplateQuerySerializer(serializers.ModelSerializer):
     """Serializer to map the Model instance into JSON format"""
 
     class Meta:
         """Meta class to map serializer's fields with the model fields."""
-        model = Bucketlist
-        fields = ('id', 'name', 'date_created', 'date_modified')
-        read_only_fields = ('date_created', 'date_modified')
+        model = SelectTemplateTask
+        fields = ('fasta', 'task_id')
+        read_only_fields = ('status', 'message', 'date_created', 'date_modified', 'results')
+
+class SelectTemplateResultsSerializer(serializers.ModelSerializer):
+    """Serializer to map the Model instance into JSON format"""
+
+    class Meta:
+        """Meta class to map serializer's fields with the model fields."""
+        model = SelectTemplateTask
+        fields = ('task_id', 'status', 'message', 'date_created', 'date_modified', 'results')
+        read_only_fields = ('status', 'message', 'date_created', 'date_modified', 'results')
+
